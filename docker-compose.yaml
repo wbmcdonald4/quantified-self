@@ -61,6 +61,7 @@ x-airflow-common:
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
     # custom variables
     OURA_TOKEN: ${OURA_TOKEN}
+    SECRETS_PATH: ${SECRETS_PATH}
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs

@@ -3,7 +3,7 @@ import logging
 import pandas as pd
 from google.oauth2 import service_account
 
-from util.constants import gcp_project
+from util.constants import gcp_project, secrets_path
 
 
 def bq_to_df(query: str) -> pd.DataFrame:
@@ -16,7 +16,7 @@ def df_to_bq(df: pd.DataFrame, destination_table: str) -> None:
     logging.info(f"\nLoading table to BQ {destination_table}: \n{df.head()}")
 
     credentials = service_account.Credentials.from_service_account_file(
-        "/opt/airflow/secrets/avid-water-361600-5ffac7792052.json",
+        f"{secrets_path}/avid-water-361600-5ffac7792052.json",
     )
 
     df.to_gbq(
