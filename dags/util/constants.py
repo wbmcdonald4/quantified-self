@@ -1,5 +1,8 @@
 from datetime import datetime, timedelta
 from enum import Enum
+from os import getenv
+
+secrets_path = getenv("SECRETS_PATH")
 
 gcp_project = "avid-water-361600"
 # gcs_bucket = BUCKET
