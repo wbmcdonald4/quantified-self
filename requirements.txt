@@ -1,0 +1,6 @@
+psycopg2-binary==2.9.3
+celery==5.2.7
+redis==3.5.3
+pandas==1.4.3
+pandas-gbq==0.17.8
+google-auth==2.9.0

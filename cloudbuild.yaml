@@ -1,0 +1,21 @@
+steps:
+    - name: "gcr.io/cloud-builders/gsutil"
+      args:
+          [
+              "-m",
+              "rsync",
+              "-r",
+              "-d",
+              "airflow/dags/",
+              "gs://us-central1-quantified-self-28fd1ac8-bucket/dags/",
+          ]
+    - name: "gcr.io/cloud-builders/gsutil"
+      args:
+          [
+              "-m",
+              "rsync",
+              "-r",
+              "-d",
+              "airflow/plugins/",
+              "gs://us-central1-quantified-self-28fd1ac8-bucket/plugins/",
+          ]
