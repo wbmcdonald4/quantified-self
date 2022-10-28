@@ -9,13 +9,13 @@ steps:
               "dags/",
               "gs://us-central1-quantified-self-28fd1ac8-bucket/dags/",
           ]
-    - name: "gcr.io/cloud-builders/gsutil"
-      args:
-          [
-              "-m",
-              "rsync",
-              "-r",
-              "-d",
-              "plugins/",
-              "gs://us-central1-quantified-self-28fd1ac8-bucket/plugins/",
-          ]
+    # - name: "gcr.io/cloud-builders/gsutil"
+    #   args:
+    #       [
+    #           "-m",
+    #           "rsync",
+    #           "-r",
+    #           "-d",
+    #           "plugins/",
+    #           "gs://us-central1-quantified-self-28fd1ac8-bucket/plugins/",
+    #       ]
