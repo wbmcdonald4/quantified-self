@@ -19,12 +19,11 @@ default_args = {
 }
 
 
-# class conn_id(Enum):
-#     gcs = "google_cloud_default"
-#     gcp = "google_cloud_default"
-#     big_query = "google_cloud_default"
-#     akashi = "akashi"
-#     slack_connection = "slack_connection"
+class conn_id(Enum):
+    gcs = "google_cloud_default"
+    gcp = "google_cloud_default"
+    big_query = "google_cloud_default"
+    slack_connection = "slack_connection"
 
 
 class schedule(Enum):
