@@ -18,7 +18,7 @@ SECRETS_PATH="/opt/airflow/secrets"
 OURA_TOKEN={YOUR_API_TOKEN}
 ```
 
-3. create a `secrets` directory, and add your `keyfile.json` that you get from creating a service account on Google Cloud Platform
+3. create a `secrets` directory, and add your `credentials.json` that you get from creating a service account on Google Cloud Platform (Make sure the file is named credentials.json)
 
 4. run `docker-compose up airflow-init` if it's your first time
 

@@ -16,7 +16,7 @@ def df_to_bq(df: pd.DataFrame, destination_table: str) -> None:
     logging.info(f"\nLoading table to BQ {destination_table}: \n{df.head()}")
 
     credentials = service_account.Credentials.from_service_account_file(
-        f"{secrets_path}/avid-water-361600-5ffac7792052.json",
+        f"{secrets_path}/credentials.json",
     )
 
     df.to_gbq(
